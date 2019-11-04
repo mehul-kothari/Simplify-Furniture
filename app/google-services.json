@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "437363197322",
+    "firebase_url": "https://simplify-furniture.firebaseio.com",
+    "project_id": "simplify-furniture",
+    "storage_bucket": "simplify-furniture.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:437363197322:android:a42f9c4e50b249bf4d3473",
+        "android_client_info": {
+          "package_name": "com.example.simplifyfurniture"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "437363197322-0r1f3nljkndisu18sl85gv3l77b6akrv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA6aoMAIc5qb6MdiAwSGpH3f8zZygaHSdg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "437363197322-0r1f3nljkndisu18sl85gv3l77b6akrv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
