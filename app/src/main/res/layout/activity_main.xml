@@ -10,13 +10,16 @@
         android:id="@+id/arFragment"
         android:name="com.google.ar.sceneform.ux.ArFragment"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
-
-<!--    <com.sothree.slidinguppanel.SlidingUpPanelLayout-->
+        android:layout_height="500dp"
+        android:layout_alignParentTop="true"/>
+<!--    <com.sothree.slidinguppanel.SlidingUpPanelLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--        xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--        xmlns:tools="http://schemas.android.com/tools"-->
 <!--        android:id="@+id/sliding_layout"-->
 <!--        android:layout_width="match_parent"-->
 <!--        android:layout_height="match_parent"-->
 <!--        android:gravity="bottom"-->
+<!--        app:umanoOverlay="false"-->
 <!--        app:umanoPanelHeight="68dp"-->
 <!--        app:umanoShadowHeight="4dp">-->
 
@@ -25,19 +28,46 @@
 <!--            android:name="com.google.ar.sceneform.ux.ArFragment"-->
 <!--            android:layout_width="match_parent"-->
 <!--            android:layout_height="match_parent" />-->
-<!--        <SearchView-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="50mm"-->
-<!--            android:gravity="top"-->
-<!--            />-->
+<!--<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    tools:context="com.example.simplifyfurniture.MainActivity">-->
 
-<!--&lt;!&ndash;        <TextView&ndash;&gt;-->
-<!--&lt;!&ndash;            android:layout_width="match_parent"&ndash;&gt;-->
-<!--&lt;!&ndash;            android:layout_height="50mm"&ndash;&gt;-->
-<!--&lt;!&ndash;            android:gravity="center|top"&ndash;&gt;-->
-<!--&lt;!&ndash;            android:text="The Awesome Sliding Up Panel"&ndash;&gt;-->
-<!--&lt;!&ndash;            android:textSize="16sp" />&ndash;&gt;-->
-<!--    </com.sothree.slidinguppanel.SlidingUpPanelLayout>-->
+<!--        <include-->
+<!--            layout="@layout/layout_ar"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent" />-->
+
+<!--        <include-->
+<!--                layout="@layout/layout_sliding_pane"/>-->
+<!--</androidx.coordinatorlayout.widget.CoordinatorLayout>-->
+
+        <include
+            layout="@layout/layout_sliding_pane"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/arFragment"/>
+
+<!--    <Button-->
+<!--        android:id="@+id/toggle_recording"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Start recording" />-->
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/toggle_recording"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="246dp"
+        android:clickable="true"
+        app:srcCompat="@android:drawable/ic_media_play" />
+
+    <!--    </com.sothree.slidinguppanel.SlidingUpPanelLayout>-->
 
 
 </RelativeLayout>

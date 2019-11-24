@@ -28,4 +28,13 @@
     <string name="btn_sign_out">Sign Out</string>
     <string name="lbl_forgot_password">Forgot password?</string>
     <string name="forgot_password_msg">We just need your registered Email Id to sent you password reset instructions.</string>
+    <string-array name="menuitems">
+        <item>Logout</item>
+        <item>Populate Database</item>
+    </string-array>
+    <string-array name="furniture_type">
+        <item>Sofa</item>
+        <item>Chair</item>
+        <item>Bed</item>
+    </string-array>
 </resources>

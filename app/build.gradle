@@ -35,9 +35,44 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
     implementation 'com.google.firebase:firebase-auth:19.1.0'
     implementation 'com.sothree.slidinguppanel:library:3.4.0'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'com.google.firebase:firebase-database:19.2.0'
+    implementation 'com.google.ar.sceneform:assets:1.13.0'
+    def drawerlayout_version = "1.0.0"
+    implementation "androidx.drawerlayout:drawerlayout:$drawerlayout_version"
+    implementation 'com.google.android.gms:play-services-auth:17.0.0'
+    implementation 'com.android.support:design:28.0.0'
+    implementation 'com.google.firebase:firebase-storage:19.1.0'
+
+
 }
 
 sceneform.asset('sampledata/ArcticFox_Posed.obj',
         'default',
         'sampledata/ArcticFox_Posed.sfa',
         'src/main/assets/ArcticFox_Posed')
+
+sceneform.asset('sampledata/CHAHIN_WOODEN_CHAIR.obj',
+        'default',
+        'sampledata/CHAHIN_WOODEN_CHAIR.sfa',
+        'src/main/assets/CHAHIN_WOODEN_CHAIR')
+
+sceneform.asset('sampledata/model.obj',
+        'default',
+        'sampledata/model.sfa',
+        'src/main/assets/model')
+
+sceneform.asset('sampledata/chair1.obj',
+        'default',
+        'sampledata/chair1.sfa',
+        'src/main/assets/chair1')
+
+sceneform.asset('sampledata/chair2.obj',
+        'default',
+        'sampledata/chair2.sfa',
+        'src/main/assets/chair2')
+
+sceneform.asset('sampledata/koltuk.obj',
+        'default',
+        'sampledata/koltuk.sfa',
+        'src/main/assets/koltuk')
