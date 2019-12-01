@@ -9,7 +9,7 @@
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:background="@color/colorPrimary"
+        android:background="#3b5998"
         android:gravity="center"
         android:orientation="vertical"
         android:padding="@dimen/activity_horizontal_margin">
@@ -17,11 +17,11 @@
 
         <ImageView
             android:id="@+id/furniture_photo"
-            android:layout_width="@dimen/logo_w_h"
-            android:layout_height="@dimen/logo_w_h"
+            android:layout_width="131dp"
+            android:layout_height="142dp"
             android:layout_gravity="center_horizontal"
             android:layout_marginBottom="30dp"
-            android:src="@mipmap/ic_launcher" />
+            android:src="@mipmap/icon" />
 
         <EditText
             android:id="@+id/furniture_name"
@@ -45,6 +45,7 @@
             android:id="@+id/furniture_type"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
             android:entries="@array/furniture_type"/>
         <!-- Login Button -->
 

@@ -63,6 +63,7 @@ public class MainActivity extends AppCompatActivity {
     private VideoRecorder videoRecorder;
     private ScrollView scrollView;
     private LinearLayout verticalLinearLayout;
+    private Button logout;
     private View dialogView;
     final long ONE_MEGABYTE = 1024 * 1024;
     private AlertDialog alertDialog;
@@ -112,26 +113,44 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * Setting up Navigation Bar - contains logout and populate database for now
+     * Need to comment this out
      */
-    private void setupNavBar() {
-        mDrawerListView.setOnItemClickListener(new ListView.OnItemClickListener() {
+//    private void setupNavBar() {
+//        mDrawerListView.setOnItemClickListener(new ListView.OnItemClickListener() {
+//            @Override
+//            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+//                String selectedItem = (String) parent.getItemAtPosition(position);
+//                if (selectedItem.equals("Logout")) {
+//                    firebaseAuth.signOut();
+//                    FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+//                    if (user != null) {
+//                        Toast.makeText(MainActivity.this, "User still logged in", Toast.LENGTH_LONG);
+//                    } else {
+//                        startActivity(new Intent(MainActivity.this, LoginActivity.class));
+//                        finish();
+//                    }
+//                } else if (selectedItem.equals("Populate Database")) {
+//                    Intent intent = new Intent(MainActivity.this, PopulateDatabaseActivity.class);
+//                    startActivity(intent);
+//                }
+//                mDrawer.closeDrawer(GravityCompat.START);
+//            }
+//        });
+//    }
+
+    //LogOut Button
+    private void setUpLogout() {
+        logout.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                String selectedItem = (String) parent.getItemAtPosition(position);
-                if (selectedItem.equals("Logout")) {
-                    firebaseAuth.signOut();
-                    FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
-                    if (user != null) {
-                        Toast.makeText(MainActivity.this, "User still logged in", Toast.LENGTH_LONG);
-                    } else {
-                        startActivity(new Intent(MainActivity.this, LoginActivity.class));
-                        finish();
-                    }
-                } else if (selectedItem.equals("Populate Database")) {
-                    Intent intent = new Intent(MainActivity.this, PopulateDatabaseActivity.class);
-                    startActivity(intent);
+            public void onClick(View arg0) {
+                firebaseAuth.signOut();
+                FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+                if (user != null) {
+                    Toast.makeText(MainActivity.this, "User still logged in", Toast.LENGTH_LONG);
+                } else {
+                    startActivity(new Intent(MainActivity.this, LoginActivity.class));
+                    finish();
                 }
-                mDrawer.closeDrawer(GravityCompat.START);
             }
         });
     }
@@ -166,7 +185,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.layout_drawer);
         firebaseAuth = FirebaseAuth.getInstance();
         mDrawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        mDrawerListView = (ListView) findViewById(R.id.left_drawer);
+//        mDrawerListView = (ListView) findViewById(R.id.left_drawer);
+        logout = findViewById(R.id.logout);
         toggleRecording = findViewById(R.id.toggle_recording);
         arFragment = (ArFragment) getSupportFragmentManager().findFragmentById(R.id.arFragment);
         scrollView = findViewById(R.id.vertical_scroll_view);
@@ -174,7 +194,8 @@ public class MainActivity extends AppCompatActivity {
 
         setupVideoRecorder();
 
-        setupNavBar();
+//        setupNavBar();
+        setUpLogout();
 
         setupArFragment();
         

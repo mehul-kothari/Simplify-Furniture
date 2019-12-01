@@ -20,14 +20,14 @@
 <!--        android:layout_height="match_parent"-->
 <!--        android:layout_gravity="start"-->
 <!--        android:fitsSystemWindows="true" />-->
-    <ListView android:id="@+id/left_drawer"
-        android:layout_width="240dp"
-        android:layout_height="match_parent"
-        android:layout_gravity="start"
-        android:entries="@array/menuitems"
-        android:choiceMode="singleChoice"
-        android:divider="@android:color/transparent"
-        android:dividerHeight="0dp"
-        android:background="#CCCCCC"/>
+<!--    <ListView android:id="@+id/left_drawer"-->
+<!--        android:layout_width="240dp"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_gravity="start"-->
+<!--        android:entries="@array/menuitems"-->
+<!--        android:choiceMode="singleChoice"-->
+<!--        android:divider="@android:color/transparent"-->
+<!--        android:dividerHeight="0dp"-->
+<!--        android:background="#CCCCCC"/>-->
 
 </androidx.drawerlayout.widget.DrawerLayout>
