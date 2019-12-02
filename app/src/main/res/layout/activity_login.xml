@@ -27,7 +27,6 @@
                 android:inputType="textEmailAddress"
                 android:textColor="@android:color/black"
                 android:textColorHint="@android:color/black"
-                android:textStyle = "bold"
                 android:textSize="50px"/>
 
             <EditText
@@ -39,7 +38,6 @@
                 android:inputType="textPassword"
                 android:textColor="@android:color/black"
                 android:textColorHint="@android:color/black"
-                android:textStyle = "bold"
                 android:textSize="50px"/>
         <!-- Login Button -->
 

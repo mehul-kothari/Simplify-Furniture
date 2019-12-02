@@ -27,6 +27,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.ScrollView;
+import android.widget.TableLayout;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnFailureListener;
@@ -62,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
     private FloatingActionButton toggleRecording;
     private VideoRecorder videoRecorder;
     private ScrollView scrollView;
-    private LinearLayout verticalLinearLayout;
+    private TableLayout verticalLinearLayout;
     private Button logout;
     private View dialogView;
     final long ONE_MEGABYTE = 1024 * 1024;

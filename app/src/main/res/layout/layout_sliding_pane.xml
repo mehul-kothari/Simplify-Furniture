@@ -23,11 +23,16 @@
         android:layout_height="match_parent"
         android:id="@+id/vertical_scroll_view">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:id="@+id/vertical_linear_layout">
+        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/vertical_linear_layout" android:layout_width="fill_parent"
+            android:layout_height="fill_parent" android:stretchColumns="*"
+            android:background="#000000"/>
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="vertical"-->
+<!--            android:id="@+id/vertical_linear_layout">-->
 <!--    <TextView-->
 <!--        android:layout_width="wrap_content"-->
 <!--        android:layout_height="wrap_content"-->
@@ -81,7 +86,7 @@
 <!--            android:id="@+id/linear_layout_bed">-->
 <!--        </LinearLayout>-->
 <!--    </HorizontalScrollView>-->
-        </LinearLayout>
+<!--        </LinearLayout>-->
     </ScrollView>
 
 
