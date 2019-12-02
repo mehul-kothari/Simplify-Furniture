@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
     private FloatingActionButton toggleRecording;
     private VideoRecorder videoRecorder;
     private ScrollView scrollView;
-    private TableLayout verticalLinearLayout;
+    private LinearLayout verticalLinearLayout;
     private Button logout;
     private View dialogView;
     final long ONE_MEGABYTE = 1024 * 1024;
@@ -183,9 +183,9 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.layout_drawer);
+        setContentView(R.layout.activity_main);
         firebaseAuth = FirebaseAuth.getInstance();
-        mDrawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+//        mDrawer = (DrawerLayout) findViewById(R.id.drawer_layout);
 //        mDrawerListView = (ListView) findViewById(R.id.left_drawer);
         logout = findViewById(R.id.logout);
         toggleRecording = findViewById(R.id.toggle_recording);
